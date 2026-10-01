@@ -35,7 +35,7 @@ pipeline {
       agent { label 'controller' }
       steps {
         sh 'docker image tag my-tomcat yeseol746/my-tomcat:v1' // Tagging with build number
-        sh 'docker image tag my-tomcat yeseol745/my-tomcat:latest' // Tagging with latest
+        sh 'docker image tag my-tomcat yeseol746/my-tomcat:latest' // Tagging with latest
       }
     }
     stage('Push Container Image') {
